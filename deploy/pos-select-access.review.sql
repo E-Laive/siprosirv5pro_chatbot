@@ -1,0 +1,46 @@
+-- REVIEW ONLY: belum dijalankan. Memerlukan persetujuan perluasan akses.
+-- Target: siprosir_ai_select@%, koneksi POS pada port 3307
+-- SELECT hanya pada tabel bisnis yang dikurasi; tanpa GRANT OPTION/DDL/DML.
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksipenjualan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksipenjualan_detail` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksipenjualan_bank` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblreturpenjualan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblreturpenjualan_detail` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpiutangpenjualan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpiutangpenjualan_log` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldatabarang` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldatabarang_stok` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldata_gudang` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblharga_satuan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblharga_grosir` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblharga_member` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblharga_diskon` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldatabarang_expired` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblstok` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblstok_opname` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransferbarang` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblkategori` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblmerek` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblsatuan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblrak` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldata_member` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblmember_setting` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblmember_poin_log` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksipembelian` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksipembelian_detail` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldata_supiller` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpurchase_order` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpurchase_order_item` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblreturpembelian` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblreturpembelian_detail` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpiutangpembelian` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblpiutangpembelian_log` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbldata_bank` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblbank_ledger` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblkas_shift` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblkas_mutasi` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tbltransaksi_kas` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblkas_kategori` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblkaryawan` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblgaji` TO 'siprosir_ai_select'@'%';
+GRANT SELECT ON `dbsiprosir_online_v5_x2`.`tblgaji_detail` TO 'siprosir_ai_select'@'%';

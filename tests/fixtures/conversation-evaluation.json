@@ -1,0 +1,14 @@
+[
+  {"id":"greeting","question":"Halo, selamat pagi","kind":"conversation","queries":false},
+  {"id":"writing_preference","question":"Buat slogan toko, jawab ringkas","kind":"conversation","queries":false},
+  {"id":"report","question":"Laporan penjualan September 2026 perhari","kind":"analysis","queries":true,"save":"september"},
+  {"id":"period_reference","question":"Itu tadi data kapan?","kind":"report_context","queries":false,"contains":"September 2026"},
+  {"id":"meaning","question":"Maksud angka omzet tadi apa?","kind":"report_context","queries":false},
+  {"id":"thanks","question":"Terima kasih ya","kind":"conversation","queries":false},
+  {"id":"general_education","question":"Apa itu SQL injection?","kind":"conversation","queries":false},
+  {"id":"writing_followup","question":"Singkatkan slogan toko tadi","kind":"conversation","queries":false},
+  {"id":"chart","question":"Tampilkan grafik laporan tadi","kind":"analysis","queries":false},
+  {"id":"next_report","question":"Laporan penjualan Oktober 2026 perhari","kind":"analysis","queries":true,"save":"october"},
+  {"id":"old_reference","question":"Laporan September 2026 itu data kapan?","kind":"report_context","queries":false,"contains":"September 2026","ref":"september"},
+  {"id":"old_table","question":"Ubah menjadi tabel","kind":"analysis","queries":false,"ref":"september"}
+]

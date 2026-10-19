@@ -1,0 +1,8 @@
+<?php $invoice = (new \App\Services\SampleInvoice())->data(); ?>
+<section class="showcase-stack"><p class="demo-note">Satu transaksi contoh dipakai pada semua format. Sesuaikan ukuran kertas pada dialog cetak. Struk fisik tetap perlu diuji dengan printer yang digunakan.</p>
+<article class="content-card"><div class="card-heading"><span><small>CETAK DOKUMEN</small><h2>Pilih format kertas</h2></span></div>
+<fieldset class="kit-print-choice"><legend class="visually-hidden">Format pratinjau</legend><?php foreach (['a4' => 'Invoice A4', 'struk58' => 'Struk 58 mm', 'struk80' => 'Struk 80 mm'] as $key => $label): ?><label class="form-check"><input class="form-check-input" type="radio" name="print_format" value="<?= $key ?>" data-print-format <?= $key === 'a4' ? 'checked' : '' ?>><span class="form-check-label"><?= $label ?></span></label><?php endforeach ?></fieldset>
+<div class="component-row"><a class="btn btn-primary" data-print-preview href="<?= site_url('dokumen/a4') ?>" target="_blank" rel="noopener">Buka Dokumen Cetak <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> di tab baru</span></a><a class="btn btn-soft" data-print-pdf href="<?= site_url('dokumen/a4/pdf') ?>">Unduh PDF</a></div></article>
+<p class="form-text">Pada layar kecil, geser pratinjau A4 ke samping untuk melihat seluruh dokumen.</p>
+<div class="kit-document-stage" tabindex="0" role="region" aria-label="Pratinjau dokumen contoh, gulir untuk melihat seluruh kertas"><?php foreach (['a4', 'struk58', 'struk80'] as $format): ?><div data-document-preview="<?= $format ?>" <?= $format !== 'a4' ? 'hidden' : '' ?>><?= view('documents/content', compact('invoice', 'format')) ?></div><?php endforeach ?></div>
+</section>

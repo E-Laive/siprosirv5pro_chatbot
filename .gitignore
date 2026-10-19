@@ -1,0 +1,181 @@
+#-------------------------
+# Operating Specific Junk Files
+#-------------------------
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OS X Thumbnails
+._*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.dist
+!.env.sample
+!.env.*.sample
+.vagrant
+Vagrantfile
+
+#-------------------------
+# Temporary Files
+#-------------------------
+# Runtime data includes local databases, sessions, rate limits and setup locks.
+# Keep directory placeholders so a fresh clone retains the CI4 writable layout.
+/writable/**
+!/writable/**/
+!/writable/**/index.html
+!/writable/**/.htaccess
+
+php_errors.log
+
+#-------------------------
+# User Guide Temp Files
+#-------------------------
+/user_guide_src/build/*
+/user_guide_src/cilexer/build/*
+/user_guide_src/cilexer/dist/*
+/user_guide_src/cilexer/pycilexer.egg-info/*
+
+#-------------------------
+# Test Files
+#-------------------------
+/tests/coverage*
+
+# Don't save phpunit under version control.
+/phpunit
+
+#-------------------------
+# Composer
+#-------------------------
+/vendor/
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Modules Testing
+_modules/*
+
+# phpenv local config
+.php-version
+
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
+
+# NetBeans
+/nbproject/
+/build/
+# Local command-output artifact (separate from the generated build directory).
+/builds
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/nb-configuration.xml
+/.nb-gradle/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+/api/
+
+# Visual Studio Code
+.vscode/
+
+/results/
+/phpunit.xml
+
+# Local test runners, generated reports and frontend dependencies.
+/.phpunit.cache/
+/.phpunit.result.cache
+/.phpunit-watcher.yml
+/coverage/
+/test-results/
+/playwright-report/
+/blob-report/
+node_modules/
+*.log
+
+# Local backups and database exports. Keep application migrations and seeders.
+/backups/
+/backup/
+/database-dumps/
+/dumps/
+/*.sql
+/*.sql.gz
+/*.sql.zip
+/*.sqlite
+/*.sqlite3
+/*.db
+/*.db-wal
+/*.db-shm
+*.bak
+*.backup
+*.sql.bz2
+*.sql.xz
+*.orig
+*.rej
+*.tmp
+*.temp
+
+# Private keys and certificate bundles; provision these per environment.
+*.key
+*.pem
+*.p12
+*.pfx
+*.p8
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+auth.json
+/.secrets/
+/secrets/
+/.npmrc
+/.netrc
+/_netrc
+
+# Machine-specific agent state and temporary workspaces.
+/.codex/
+/.claude/settings.local.json
+/.worktrees/
